@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-group">
+    <form method="POST" action="{{ url_for('get_post') }}" class="form-group"> 
+        <label for="url">Instagram URL: </label>
+        <input type="text" name="url" placeholder="Enter Instagram URL here" class="form-control" id="url">
+        <button type="submit" class="btn btn-primary">Download</button>
+        <button type="reset" class="btn btn-warning">Clear</button>
+    </form>
+</div>
+{% endblock %}
